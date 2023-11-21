@@ -20,7 +20,7 @@ public class Event {
     @Size(min = 15,message = "description must be equal or greater than 15")
     private String description;
 
-//    @NotNull(message = "capacity cannot be empty")
+    @NotNull(message = "capacity cannot be empty")
     @Digits(integer = 2 , fraction = 0, message = "capacity must be a number")
     @Min(value = 25,message = "the number must be equal or greater than 25")
     private int capacity;
